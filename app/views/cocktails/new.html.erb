@@ -1,0 +1,13 @@
+<h1 align="center"> Give me the name of your cocktail</h1>
+
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <%= f.submit %>
+<% end %>
+
+<div class="container" align="center">
+<%= link_to 'Back to homepage', cocktails_path  %>
+</div>
+
+
+

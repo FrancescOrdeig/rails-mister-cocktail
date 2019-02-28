@@ -1,0 +1,8 @@
+<h1>Add your dose</h1>
+
+<%= form_for [@cocktail, @dose] do |f| %>
+<%= f.label :description %>
+<%= f.text_field :description %>
+
+<%= f.submit "add a dose"%>
+<% end %>

@@ -3,14 +3,12 @@
 
 <div class=“container”>
 <ul>
-  <% @cocktail.each do |cocktail| %>
+  <% @cocktails.each do |cocktail| %>
     <li> <%= link_to cocktail.name, cocktail_path(cocktail) %>
     </li>
    <% end  %>
    <p align="center"><%= link_to "Add a cocktail", new_cocktail_path %></p>
  </ul>
 </div>
-
-<%= link_to 'add a dose', new_cocktail_dose_path(@cocktail)  %>
 
 
